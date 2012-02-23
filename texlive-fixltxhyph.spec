@@ -1,11 +1,11 @@
-# revision 25122
+# revision 25420
 # category Package
 # catalog-ctan /macros/latex/contrib/fixltxhyph
-# catalog-date 2012-01-16 14:23:15 +0100
+# catalog-date 2012-02-17 19:44:12 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2a
+# catalog-version 0.3
 Name:		texlive-fixltxhyph
-Version:	0.2a
+Version:	0.3
 Release:	1
 Summary:	Allow hyphenation of partially-emphasised substrings
 Group:		Publishing
@@ -20,13 +20,13 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package fixes the problem of TeX faiing to hyphenate letter
-strings that seem (to TeX) to be words, but which are followed
-by an apostrophe and then an emphasis command. The cause of the
-problem is not the apostrophe, but the font change in the
-middle of the string. The problem arises in Catalan, French and
-Italian (it could arise in Romansh, were there LaTeX support
-for it).
+The package fixes the problem of TeX failing to hyphenate
+letter strings that seem (to TeX) to be words, but which are
+followed by an apostrophe and then an emphasis command. The
+cause of the problem is not the apostrophe, but the font change
+in the middle of the string. The problem arises in Catalan,
+French and Italian (it could arise in Romansh, were there LaTeX
+support for it).
 
 %post
     %{_sbindir}/texlive.post
