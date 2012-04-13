@@ -1,11 +1,11 @@
-# revision 25420
+# revision 25832
 # category Package
 # catalog-ctan /macros/latex/contrib/fixltxhyph
-# catalog-date 2012-02-17 19:44:12 +0100
+# catalog-date 2012-04-02 21:14:13 +0200
 # catalog-license lppl1.3
-# catalog-version 0.3
+# catalog-version 0.4
 Name:		texlive-fixltxhyph
-Version:	0.3
+Version:	0.4
 Release:	1
 Summary:	Allow hyphenation of partially-emphasised substrings
 Group:		Publishing
