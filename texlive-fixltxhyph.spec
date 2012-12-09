@@ -53,3 +53,19 @@ support for it).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
++ Revision: 790570
+- Update to latest release.
+
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-1
++ Revision: 779453
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2a-1
++ Revision: 762622
+- texlive-fixltxhyph
+- texlive-fixltxhyph
+
