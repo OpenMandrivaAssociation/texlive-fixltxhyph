@@ -1,19 +1,13 @@
-# revision 25832
-# category Package
-# catalog-ctan /macros/latex/contrib/fixltxhyph
-# catalog-date 2012-04-02 21:14:13 +0200
-# catalog-license lppl1.3
-# catalog-version 0.4
 Name:		texlive-fixltxhyph
-Version:	0.4
-Release:	10
+Version:	25832
+Release:	1
 Summary:	Allow hyphenation of partially-emphasised substrings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fixltxhyph
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fixltxhyph.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ French and Italian (it could arise in Romansh, were there LaTeX
 support for it).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,26 +40,11 @@ support for it).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
-+ Revision: 790570
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-1
-+ Revision: 779453
-- Update to latest release.
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2a-1
-+ Revision: 762622
-- texlive-fixltxhyph
-- texlive-fixltxhyph
-
