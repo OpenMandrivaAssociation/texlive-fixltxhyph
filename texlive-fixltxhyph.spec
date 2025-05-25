@@ -1,6 +1,6 @@
 Name:		texlive-fixltxhyph
-Version:	25832
-Release:	2
+Version:	73227
+Release:	1
 Summary:	Allow hyphenation of partially-emphasised substrings
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/fixltxhyph
